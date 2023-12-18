@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even selector</title>
+</head>
+<body>
+    <h1>Odd or Even selector</h1>
+
+    <table>
+        <tr>
+            <th>Data 0</th>
+            <th>Data 0</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 1</td>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 4</td>
+        </tr>
+        <tr>
+            <td>Data 5</td>
+            <td>Data 5</td>
+        </tr>
+    </table>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+            $("tr:odd").css("background-color",'yellow');
+            $("tr:even").css("background-color",'pink');
+        });
+    </script>
+    
+</body>
+</html>

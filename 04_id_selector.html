@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Selector</title>
+</head>
+
+<body>
+    <h1>Using this keyword on click h1 tag</h1>
+    <h1>Using this keyword on click h1 tag</h1>
+    <h1 id="a1">Using this keyword on click h1 tag using id (a1) selector</h1>
+    <h1 id="b1">Using this keyword on click h1 tag using id (b1) selector</h1>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+
+            $("h1").click(function(){
+                var a = $(this).html();
+                console.log(a);
+            });
+
+            $("#a1").click(function(){
+                var b = $(this).html();
+                console.log(b);
+            });
+
+            $("#b1").click(function(){
+                var c = $(this).html();
+                console.log(c);
+            });
+        });
+    </script>
+</body>
+
+</html>

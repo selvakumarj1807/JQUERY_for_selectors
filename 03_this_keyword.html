@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+</head>
+
+<body>
+
+    <h1>Using normal click the h1 tag in console</h1>
+    <h2>Using this keyword on click the h2 tag in console</h2>
+    <h2>Using this keyword on click the h2 tag in console</h2>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+
+            $("h1").click(function(){
+                console.log("Using normal");
+            });
+
+            $("h2").click(function(){
+                var a = $(this).html();
+                console.log(a);
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

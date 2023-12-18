@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector</title>
+</head>
+<body>
+
+    <h1>Class Selector</h1>
+    <i class="a">Class selector in italic tag</i>
+    <p class="a">Class selector in paragraph tag</p>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+
+            $(".a").click(function(){
+                var b = $(this).html();
+                console.log(b)
+            });
+        });
+    </script>
+    
+</body>
+</html>

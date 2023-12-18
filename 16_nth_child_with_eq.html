@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth Child with eq selector</title>
+
+    <style>
+        li{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>nth Child with eq Selector</h1>
+    <ul class="list">
+        <li>Graphic Designing</li>
+        <li>Web Designing</li>
+        <li>Programming</li>
+        <li>
+            <ul>
+                <li>C Programming</li>
+                <li>C++ Programming</li>
+                <li>Java</li>
+                <li>C#</li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+
+            $("ul.list").children("li:nth-child(2)").css("color",'red');
+
+            $("ul.list").children("li:nth-child(3)").text("This is nth child by css jquery for use tex function").css("color",'black');
+
+            $("ul.list").children("li").eq(0).css("color",'brown');
+
+
+        });
+    </script>
+    
+</body>
+</html>

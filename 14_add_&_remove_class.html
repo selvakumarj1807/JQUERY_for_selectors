@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add or Remove</title>
+
+    <style>
+        .design{
+            color: red;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="design">Add or Remove Class</h2>
+
+    <button id='b1'>Show</button>
+    <button id='b2'>Remove</button>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+            $("h2").click(function(){
+                $(this).removeClass('design');
+            });
+
+            $("#b1").click(function(){
+                $('h2').addClass('design');
+            });
+
+            $("#b2").click(function(){
+                $('h2').removeClass('design');
+            });
+
+
+        });
+    </script>
+    
+</body>
+</html>

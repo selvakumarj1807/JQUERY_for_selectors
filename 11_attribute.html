@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+</head>
+
+<body>
+    <h1>Attribute method in Jquery</h1>
+
+    <img src="images/a1.jpg">
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+            $("img").click(function(){
+                var a = $(this).attr("src");
+                alert(a);
+
+                $(this).attr("src",'images/b1.jpg');
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>

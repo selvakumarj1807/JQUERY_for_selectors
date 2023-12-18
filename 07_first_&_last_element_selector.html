@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First & Last Element  Selector</title>
+</head>
+<body>
+
+    <h1>First & Last Element Selector</h1>
+    <i class="a">Class First Element selector in italic tag</i>
+    <i class="a">Class selector in italic tag</i>
+    <i class="a">Class selector in italic tag</i>
+    <i class="a">Class selector in italic tag</i>
+    <i class="a">Class selector in italic tag</i>
+    <i class="a">Class selector in italic tag</i>
+    <i class="a">Class Last Element selector in italic tag</i>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $("document").ready(function(){
+            $(".a:first").css("color",'red');
+            $(".a:last").css("color",'blue');
+        });
+    </script>
+    
+</body>
+</html>
